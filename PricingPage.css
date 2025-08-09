@@ -1,0 +1,189 @@
+/* Root layout */
+.pricing-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem;
+  background-color: #f4f7fa;
+  color: #333;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Heading */
+.pricing-header {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Plans Layout */
+.plans-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Plan Card */
+.plan-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 2rem;
+  flex: 1 1 300px;
+  max-width: 500px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+}
+
+.plan-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.plan-title .target {
+  font-weight: normal;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.plan-price {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin: 1rem 0;
+}
+
+.plan-price span {
+  font-size: 1rem;
+  color: #999;
+}
+
+.plan-features {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+
+.plan-features li {
+  margin: 0.6rem 0;
+  line-height: 1.4;
+}
+
+/* Buttons */
+.select-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #344955;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.select-btn:hover {
+  background-color: #50727B;
+}
+
+/* Premium Theme */
+.premium {
+  border: 2px solid #78A083;
+}
+
+.premium-btn {
+  background-color: #78A083;
+}
+
+.premium-btn:hover {
+  background-color: #50727B;
+}
+
+/* Internship Demos */
+.demo-section {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.internships {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.internship-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 1.2rem;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.04);
+  text-align: left;
+  transition: transform 0.2s ease;
+}
+
+.internship-card:hover {
+  transform: scale(1.03);
+}
+
+/* Pricing Table */
+.pricing-table {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  justify-items: center;
+  align-items: stretch;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 700px) {
+  .pricing-table {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-items: center;
+    align-items: stretch;
+  }
+  .pricing-card {
+    min-width: 0;
+    max-width: 400px;
+    width: 100%;
+    margin: 0;
+    height: 100%;
+  }
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  min-height: 480px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.plan-details {
+  flex: 1 1 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.select-btn {
+  margin-top: auto;
+  align-self: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .plans-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
